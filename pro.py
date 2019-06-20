@@ -1,11 +1,7 @@
-no=input()
-a=1
-for i in range(len(no)-1):
-    ss=no[i]+no[i+1]
-    p=int(ss)
-    if p<=26 and no[i]!="0":
-       a+=1
-if a==3:
-    print(a)
-else:
-    print(a+(a-1)//2)
+from itertools import combinations
+string1,num1=map(int,input().split())
+n1=len(str(string1))
+a1=list(combinations(str(string1),n1-num1))
+a1=(sorted(a1))
+a2="".join(a1[0])
+print(a2)
