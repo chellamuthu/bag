@@ -1,11 +1,11 @@
-num=input()
-k=1
-for i in range(len(num)-1):
-    ss=num[i]+num[i+1]
+no=input()
+a=1
+for i in range(len(no)-1):
+    ss=no[i]+no[i+1]
     p=int(ss)
-    if p<=26 and num[i]!="0":
-        k+=1
-if k==3:
-    print(k)
+    if p<=26 and no[i]!="0":
+       a+=1
+if a==3:
+    print(a)
 else:
-    print(k+(k-1)//2)
+    print(a+(a-1)//2)
