@@ -1,14 +1,18 @@
-#chella
-import sys, string, math
+# chella
+a=int(input())
 
-a = int(input())
-b = [ int(x) for x in input().split()]
-c = 0
-for i in range(0,n-2) :
-	for j in range(i+1, a-1):
-		for k in range(j+1, a ):
-			if b[i] < b[j] < b[k] :
-				c += 1
-				#print(b[i],b[j],b[k],c)
+b=list(map(int,input().split()))
 
-print(c)
+e=0
+
+for i in range(len(b)-2):
+
+    for x in range(i+1,len(b)-1):
+
+         for j in range(x+1,len(b)):
+
+            if b[i]<b[x]<b[j] and i<x<j:
+
+                e+=1
+
+print(e)    
